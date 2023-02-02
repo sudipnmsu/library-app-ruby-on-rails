@@ -7,7 +7,7 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore the default SQLite database. !! --->> Temporarily uploading the db
+# Ignore the default SQLite database. <<-- Temporarily uploading the DB files
 #/db/*.sqlite3
 #/db/*.sqlite3-*
 
@@ -29,14 +29,9 @@
 !/tmp/storage/
 !/tmp/storage/.keep
 
-# Ignore 
-
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-# Ignore mac .DS_Store
 .DS_Store
-
-
