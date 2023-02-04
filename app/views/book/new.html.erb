@@ -1,0 +1,14 @@
+<h1>Add new book</h1>
+
+<%= form_tag :action => 'create' do %>
+<p><label for = "book_title">Title</label>:
+
+<%= text_field 'books', 'title' %></p>
+<p><label for = "book_author_id">Author</label>:
+
+<%= collection_select(:books, :author_id, @authors, :id, :name, prompt: true) %></p>
+
+<%= submit_tag "Create" %>
+
+<% end -%>
+<%= link_to 'Back', {:action => 'list'} %>

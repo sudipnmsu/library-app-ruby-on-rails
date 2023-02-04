@@ -1,0 +1,11 @@
+<h1>Add new author</h1>
+
+<%= form_tag :action => 'create' do %>
+<p><label for = "author_name">Author Name</label>:
+
+<%= text_field 'authors', 'name' %></p>
+
+<%= submit_tag "Create" %>
+
+<% end -%>
+<%= link_to 'Back', {:action => 'list'} %>
