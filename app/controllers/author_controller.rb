@@ -48,7 +48,7 @@ class AuthorController < ApplicationController
     end
 
     def show_books
-    	@author = Author.find(params[:id])
+    	redirect_to controller: :book, action: :list
    	end
 
 end

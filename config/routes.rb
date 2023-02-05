@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'book/edit', to: 'book#edit'
   get 'book/delete', to: 'book#delete'
   get 'book/show_books', to: 'book#show_books'
+  get 'book/show_authors', to: 'book#show_authors'
+  #get 'author/list', to: 'book#show_authors'
 
   # author
   get 'author/list', to: 'author#list'

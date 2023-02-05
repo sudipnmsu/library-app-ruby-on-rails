@@ -11,13 +11,13 @@
 		<%= link_to c.title, {:action => "show", :id => c.id} -%>
 		&nbsp; &nbsp;
 	   	<b> <%= link_to 'Edit', {:action => "edit", :id => c.id} %></b>
-	   	<b> <%= link_to "Delete", {:action => 'delete', :id => c.id}, 
-	   	:confirm => "Are you sure you want to delete this item?" %></b>
+	   	<b> <%= link_to "Delete", {:action => 'delete', :id => c.id} %></b>
 	</li>
 	<% end %>
 </ul>
 
 <% end %>
 
-<p id = "new_book"><%= link_to "Add new Book", {:action => 'new' }%></p>
+<p id = "new_book"><%= link_to "Add New Book", {:action => 'new' }%></p>
+<p id = "author_list"><%= link_to "Show Authors", {:action => 'show_authors' }%></p>
 
