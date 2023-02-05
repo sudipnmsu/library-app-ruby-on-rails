@@ -1,4 +1,6 @@
-<h1>Add new author</h1>
+<h2>Add New Author</h2>
+
+<%= link_to 'Back', {:action => 'list'} %>
 
 <%= form_tag :action => 'create' do %>
 <p><label for = "author_name">Author Name</label>:
@@ -8,4 +10,3 @@
 <%= submit_tag "Create" %>
 
 <% end -%>
-<%= link_to 'Back', {:action => 'list'} %>

@@ -1,5 +1,7 @@
 class AuthorController < ApplicationController
 
+    layout 'base'
+    
 	def list
 		@authors = Author.all
 	end

@@ -1,4 +1,6 @@
-<h1>Add new book</h1>
+<h2>Add new book</h2>
+
+<%= link_to 'Back', {:action => 'list'} %>
 
 <%= form_tag :action => 'create' do %>
 <p><label for = "book_title">Title</label>:
@@ -8,7 +10,8 @@
 
 <%= collection_select(:books, :author_id, @authors, :id, :name, prompt: true) %></p>
 
+<br />
+
 <%= submit_tag "Create" %>
 
 <% end -%>
-<%= link_to 'Back', {:action => 'list'} %>
