@@ -7,7 +7,7 @@
 <%= form_for @book, :url =>{:action => "update", :id =>@book} do |f| %>
 
 <p>Title: <%= f.text_field 'title' %></p>
-<p>Subject: <%= f.collection_select :author_id, Author.all, :id, :name %></p>
+<p>Author: <%= f.collection_select :author_id, Author.all, :id, :name %></p>
 
 <br>
 
